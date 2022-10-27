@@ -2,11 +2,16 @@ package com.example.agenda.modelo;
 
 public class Contacto {
 
+    // 1. declarar nuestros atributos.
+
     private int id;
     private String nombre;
     private String telefono;
     private String correo;
     private String direccion;
+
+    // Generar los métodos 'get' y 'set'
+    // para eso se seleccionar con right-click, Generate, Gether and Sedder.
 
     public int getId() {
         return id;
@@ -47,4 +52,6 @@ public class Contacto {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
+    //...de aquí crear e ir a la calse 'Conexion'
 }
