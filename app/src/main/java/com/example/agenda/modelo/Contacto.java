@@ -53,5 +53,5 @@ public class Contacto {
         this.direccion = direccion;
     }
 
-    //...de aquí crear e ir a la calse 'Conexion'
+    //...de aquí crear e ir a la clase 'Conexion'
 }

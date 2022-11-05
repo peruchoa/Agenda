@@ -1,9 +1,9 @@
 package com.example.agenda.modelo;
 
-
 import android.content.ContentValues;
 import android.content.Context;
 // Crear el constructor.
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -71,4 +71,31 @@ public class Conexion extends SQLiteOpenHelper {
 
 
     }
+
+    // Generar nuestro método 'consultar'.
+
+    public Cursor consultar(){
+
+        // Traer todos los registros que se encuentren en la tabla.
+
+        String query = "Select * from contactos";
+        SQLiteDatabase db = this.getReadableDatabase(); // leer datos solamente.
+
+        // Crear un objeto cursor.
+
+        Cursor cursor = null;
+
+        // Validando si hay registros.
+
+        if(cursor == null) {
+            cursor = db.rawQuery(query, null);
+        }
+
+        // Pase a MainActivity.
+
+        return cursor;
+
+
+    }
+
 }
