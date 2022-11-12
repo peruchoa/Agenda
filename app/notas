@@ -2,3 +2,12 @@ Tutorial de Julio Mosqueda
 No.19
 Conexion a bases de datos a través del motor SQLite (Insertar) - Tutorial Programación Android
 url: https://youtu.be/vpaukcJ4tmY
+---
+Step by Step Implementation
+    Step by Step Implementation
+    Step 1: Create a New Project.
+    Step 2: Adding permissions to access the storage in the AndroidManifest.xml file.
+    Step 3: Working with the activity_main.xml file.
+    Step 4: Creating a new Java class for performing SQLite operations.
+    Step 5: Working with the MainActivity.java file.
+---

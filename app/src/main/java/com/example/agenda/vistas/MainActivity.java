@@ -70,7 +70,10 @@ public class MainActivity extends AppCompatActivity {
         correos = new ArrayList<String>();
         direcciones = new ArrayList<String>();
 
+        // Llamar a nuestro método.
         prepararDatos();
+        // Llamar a nuestro adaptador para poder asignarlo a nuestro RecyclerView.
+        // ...entonces crear nuestro adaptador.
 
         Adaptador adaptador = new Adaptador(this,ids, nombres, telefonos, correos, direcciones);
         lista.setAdapter(adaptador);
