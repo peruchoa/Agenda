@@ -68,34 +68,25 @@ public class Conexion extends SQLiteOpenHelper {
         values.put("direccion", contacto.getDireccion());
 
         db.insert("contactos", null, values);
-
-
     }
 
     // Generar nuestro método 'consultar'.
 
     public Cursor consultar(){
-
         // Traer todos los registros que se encuentren en la tabla.
-
         String query = "Select * from contactos";
         SQLiteDatabase db = this.getReadableDatabase(); // leer datos solamente.
 
         // Crear un objeto cursor.
-
         Cursor cursor = null;
 
         // Validando si hay registros.
-
         if(cursor == null) {
             cursor = db.rawQuery(query, null);
         }
 
-        // Pase a MainActivity.
-
+        // Pase a MainActivity.return cursor;
         return cursor;
-
-
     }
 
 }
