@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     //Define las variables de los controles del activity 'Agregar'.
     RecyclerView lista;
     FloatingActionButton btnAgregar;
-
     Conexion con;
     ArrayList<String> ids;
     ArrayList<String> nombres;
@@ -38,20 +37,17 @@ public class MainActivity extends AppCompatActivity {
         btnAgregar = findViewById(R.id.btnAgregar);
 
         // Habilitar el método 'click'.
-        btnAgregar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnAgregar.setOnClickListener(v -> {
 
-                // Abrir el segundo activity... 'Agregar'
-                // param1: el activity donde se está actualmente.
-                // param2: nombre de la clase del activity al que se quiere llamar.
-                Intent intent = new Intent(MainActivity.this, Agregar.class);
+            // Abrir el segundo activity... 'Agregar'
+            // param1: el activity donde se está actualmente.
+            // param2: nombre de la clase del activity al que se quiere llamar.
+            Intent intent = new Intent(MainActivity.this, Agregar.class);
 
-                // Abrir segundo activity,
-                // generar la base de datos
-                // para pasar los datos a través del objeto 'Contacto'
-                startActivity(intent);
-            }
+            // Abrir segundo activity,
+            // generar la base de datos
+            // para pasar los datos a través del objeto 'Contacto'
+            startActivity(intent);
         });
         //Conexion con = new Conexion(this);
 
