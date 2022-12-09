@@ -20,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
     //Define las variables de los controles del activity 'Agregar'.
     RecyclerView lista;
     FloatingActionButton btnAgregar;
+
     Conexion con;
+
     ArrayList<String> ids;
     ArrayList<String> nombres;
     ArrayList<String> telefonos;
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> direcciones;
 
     @Override
+    // *****************************************
+    // OnCreate
+    //******************************************
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -50,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         //Conexion con = new Conexion(this);
-
         // Crear una conexion con nuestra aplicacion.
         con = new Conexion(this);
 

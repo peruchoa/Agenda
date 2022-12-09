@@ -40,7 +40,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.Vista> {
         return new Vista(v);
     }
     @Override
-    public void onBindViewHolder(@NonNull Adaptador.Vista holder, final int position) {
+    public void onBindViewHolder(@NonNull Adaptador.Vista holder, int position) {
         holder.txtShowNombre.setText(nombres.get(position));
         holder.txtShowTelefono.setText(telefonos.get(position));
 
@@ -69,17 +69,17 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.Vista> {
     public int getItemCount() {
         return nombres.size();
     }
+
     public class Vista extends RecyclerView.ViewHolder {
         TextView txtShowNombre, txtShowTelefono ;
-
         // Hacer referencia a mis objetos.
         public Vista(@NonNull View itemView) {
             super(itemView);
             txtShowNombre = itemView.findViewById(R.id.txtShowNombre);
             txtShowTelefono = itemView.findViewById(R.id.txtShowTelefono);
 
-            //fila = itemView.findViewById(R.id.lista);
-            fila = itemView.findViewById(R.id.fila);
+            fila = itemView.findViewById(R.id.lista);
+            //fila = itemView.findViewById(R.id.fila);
         }
     }
 }

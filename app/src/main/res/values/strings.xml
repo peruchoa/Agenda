@@ -2,10 +2,10 @@
     <string name="app_name">Agenda</string>
     <string name="txtid">id</string>
     <string name="txtNombre">Nombre</string>
-    <string name="txtTelefono">Teléfono</string>
+    <string name="txtTelefono">Telefono</string>
     <string name="txtCorreo">Correo</string>
-    <string name="txtDireccion">Dirección</string>
+    <string name="txtDireccion">Direccion</string>
     <string name="btnGuardar">Guardar</string>
-    <string name="txtIntro">Ejemplo tomado de curso de Youtube hecho por Julio Mosqueda acerca de como crear una base de datos usando SQLite.\n\nCursos aplicados:\n------------------\nNo.19 : Como crear una base de datos con SQLite.\nNo.20 : Como acceder a registros en una base de datos.</string>
+    <string name="txtIntro">Ejemplo tomado de curso de Youtube hecho por Julio Mosqueda</string>
     <string name="btnActualizar">Actualizar</string>
 </resources>
